@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th5 13, 2024 lúc 10:34 AM
+-- Thời gian đã tạo: Th5 23, 2024 lúc 10:28 AM
 -- Phiên bản máy phục vụ: 10.4.32-MariaDB
 -- Phiên bản PHP: 8.2.12
 
@@ -57,6 +57,17 @@ CREATE TABLE `tbl_baiviet` (
   `hinhanh` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Đang đổ dữ liệu cho bảng `tbl_baiviet`
+--
+
+INSERT INTO `tbl_baiviet` (`id`, `tenbaiviet`, `tomtat`, `noidung`, `id_danhmuc`, `tinhtrang`, `hinhanh`) VALUES
+(9, 'Dự báo thời tiết 21/5/2024: Mưa to từ miền Trung trở vào Nam Bộ', '<h2>Dự b&aacute;o thời tiết h&ocirc;m nay (21/5/2024), khu vực Trung v&agrave; Nam Trung Bộ, T&acirc;y Nguy&ecirc;n, Nam Bộ c&oacute; mưa, mưa vừa v&agrave; gi&ocirc;ng, cục bộ c&oacute; mưa to đến rất to. H&agrave; Nội c&oacute; mưa r&agrave;o v&agrave; gi&ocirc;ng v&agrave;i nơi v&agrave;o chiều tối v&agrave; đ&ecirc;m, ng&agrave;y nắng.</h2>\r\n', '', 10, 1, '1716450281_1463394014-mua2-1691401270377606822319.jpg'),
+(10, 'Máy ảnh AI chụp không cần ống kính', '<p>M&aacute;y ảnh Paragraphica sử dụng th&ocirc;ng tin vị tr&iacute;, thời tiết, thời gian v&agrave; AI để tạo ra bức ảnh phức tạp về nơi người d&ugrave;ng đang đứng.</p>\r\n\r\n<p>Bjorn Karmann, nh&agrave; thiết kế tương t&aacute;c v&agrave; trải nghiệm tại Amsterdam, giới thiệu Paragraphica, camera sử dụng dữ liệu vị tr&iacute; v&agrave; tr&iacute; tuệ nh&acirc;n tạo (AI) để tạo ra ảnh chụp về một địa điểm v&agrave;o thời gian nhất định,&nbsp;<em>Futurism</em>&nbsp;h&ocirc;m 1/6 đưa tin.</p>\r\n', '', 12, 1, '1716450444_Cameranolens-1685700622-8317-1685701102.jpg'),
+(11, 'ĐT Việt Nam đón tin vui khi đối đầu với Indonesia tại AFF Cup 2024', '<p>Dưới thời HLV Troussier, ĐT Việt Nam đ&atilde; phải chấp nhận cảnh thua to&agrave;n tập trước Indonesia, tệ đến nỗi kh&ocirc;ng thể khiến lưới của đối thủ rung l&ecirc;n d&ugrave;ng chỉ một lần.</p>\r\n\r\n<p>Những l&aacute; thăm may rủi lại khiến ĐT Việt Nam nằm chung bảng với Indonesia tại AFF Cup 2024, v&agrave; lần n&agrave;y, sự kỳ vọng của người h&acirc;m mộ sẽ được đặt l&ecirc;n vai của t&acirc;n HLV Kim Sang Sik.&nbsp;</p>\r\n', '', 11, 1, '1716450616_viet-nam-vs-indonesia-2.webp'),
+(12, 'Dương Quốc Hoàng tạo địa chấn bi-a pool thế giới, loại siêu sao số 1', '<p>Giải pool 9 bi quốc tế Jacoby Scottish Open 2024 đang diễn ra tại Scotland c&oacute; sự g&oacute;p mặt của 96 cơ thủ tranh t&agrave;i đua&nbsp;chức v&ocirc; địch trị gi&aacute; 10.000 bảng Anh (khoảng 316 triệu đồng).&nbsp;Đ&acirc;y l&agrave; giải đấu tiền UK Open 2024 danh gi&aacute; tại Anh, v&igrave; vậy&nbsp;quy tụ hầu hết c&aacute;c hảo thủ nổi tiếng thế giới tham dự.</p>\r\n\r\n<p>Với đẳng cấp thượng thừa gi&uacute;p bản th&acirc;n thống trị tr&ecirc;n tất cả c&aacute;c bảng xếp hạng pool quốc tế, Francisco Sanchez Ruiz nhập cuộc thần tốc&nbsp;sớm dẫn trước Quốc Ho&agrave;ng đến 6-1 chỉ sau 7 v&aacute;n đấu.</p>\r\n', '', 11, 1, '1716450739_anh-bia-hoang-1714879644-511-width740height495.jpg'),
+(13, 'iPhone 16 Pro có thể thêm màu titan hồng', '<p>Phone 16 Pro v&agrave; 16 Pro Max được cho l&agrave; sẽ bổ sung m&agrave;u titan hồng mới thay cho m&agrave;u xanh.</p>\r\n\r\n<p>Tr&ecirc;n X ng&agrave;y 19/5, nh&agrave; ph&acirc;n t&iacute;ch Ming-Chi Kuo, người đưa ra nhiều th&ocirc;ng tin ch&iacute;nh x&aacute;c về c&aacute;c thiết bị chưa ra mắt của Apple, cho biết d&ograve;ng Pro của iPhone 16 sẽ c&oacute; c&aacute;c t&ugrave;y chọn m&agrave;u sắc gồm đen, trắng, titan tự nhi&ecirc;n v&agrave; hồng. Trong khi đ&oacute;, iPhone 16 v&agrave; iPhone 16 Plus c&oacute; m&agrave;u đen, trắng, xanh l&aacute;, hồng v&agrave; xanh lam.</p>\r\n', '', 12, 1, '1716451024_photo-7-1706167163362191254619-5798-1716168060.png');
+
 -- --------------------------------------------------------
 
 --
@@ -101,7 +112,10 @@ CREATE TABLE `tbl_cart` (
 --
 
 INSERT INTO `tbl_cart` (`id_cart`, `id_khachhang`, `code_cart`, `cart_status`, `cart_date`) VALUES
-(43, 99, '7765', 1, '05/12/2024');
+(43, 99, '7765', 1, '05/12/2024'),
+(44, 99, '9314', 1, ''),
+(45, 99, '137', 1, ''),
+(46, 99, '1196', 1, '');
 
 -- --------------------------------------------------------
 
@@ -121,7 +135,11 @@ CREATE TABLE `tbl_cart_details` (
 --
 
 INSERT INTO `tbl_cart_details` (`id_cart_details`, `code_cart`, `id_sanpham`, `soluongmua`) VALUES
-(51, '7765', 44, 2);
+(51, '7765', 44, 2),
+(52, '9314', 73, 2),
+(53, '9314', 63, 1),
+(54, '137', 51, 1),
+(55, '1196', 71, 1);
 
 -- --------------------------------------------------------
 
@@ -180,6 +198,15 @@ CREATE TABLE `tbl_danhmucbaiviet` (
   `thutu` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Đang đổ dữ liệu cho bảng `tbl_danhmucbaiviet`
+--
+
+INSERT INTO `tbl_danhmucbaiviet` (`id_baiviet`, `tendanhmuc_baiviet`, `thutu`) VALUES
+(10, 'Thời tiết', 1),
+(11, 'Thể thao', 2),
+(12, 'Công nghệ', 3);
+
 -- --------------------------------------------------------
 
 --
@@ -196,7 +223,7 @@ CREATE TABLE `tbl_lienhe` (
 --
 
 INSERT INTO `tbl_lienhe` (`id`, `thongtinlienhe`) VALUES
-(1, '<ol>\r\n	<li>\r\n	<h3>Số điện thoại :<strong>&nbsp;123456789</strong></h3>\r\n	</li>\r\n	<li>\r\n	<h3>Zalo :&nbsp;</h3>\r\n	</li>\r\n	<li>\r\n	<h3>Fb :<a href=\"https://www.facebook.com/quan.nguyentrong.35325\">Codewithquan</a></h3>\r\n	</li>\r\n	<li>\r\n	<h3>GitHub : <a href=\"https://github.com/quandarius-pfp\">codewithquan/github</a></h3>\r\n	</li>\r\n	<li>\r\n	<h3>Youtube : <a href=\"https://www.youtube.com/channel/UCmCJIuawU-mSDhO6IAA08eA\" target=\"_blank\">codewithquan/youtube</a></h3>\r\n	</li>\r\n</ol>\r\n\r\n<h3><strong>&nbsp; &nbsp; &nbsp; &nbsp;Chuy&ecirc;n Cung cấp source code miễn Ph&iacute;</strong></h3>\r\n\r\n<p><img alt=\"My avatar\" src=\"https://scontent.fhan14-2.fna.fbcdn.net/v/t1.6435-9/246001280_1047384762713639_1851964203387963952_n.jpg?_nc_cat=103&amp;ccb=1-5&amp;_nc_sid=09cbfe&amp;_nc_ohc=1JaGlEcy8CgAX9cS4NK&amp;_nc_ht=scontent.fhan14-2.fna&amp;oh=8e24aff61d131165abffec66fdcd8c0f&amp;oe=61AAB6D1\" style=\"height:500px; width:500px\" /><img alt=\"Hình ảnh sinh hoạt công ty,hình ảnh đồ án khóa mấy,khoa nào\" src=\"https://i1.rgstatic.net/publication/333455314_PHP_MySQLI_PDO_x_MySQLi/links/5ceea072299bf1fb18492649/largepreview.png\" style=\"height:225px; width:400px\" /><img alt=\"\" src=\"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8ipuq-Ye7bK36QKeYFtKsNRVhAt4DYyZtLyu3GzUizyCjNHaTrlwrmBesTZVKYzo8Tmw&amp;usqp=CAU\" style=\"height:363px; width:400px\" /></p>\r\n\r\n<h3>&nbsp;</h3>\r\n\r\n<h3>&nbsp;</h3>\r\n');
+(1, '<ol>\r\n	<li>\r\n	<h3>- Hệ thống Chuy&ecirc;n cung cấp C&aacute;c thiết bị M&aacute;y ảnh v&agrave; Phụ kiện Số 1 Việt Nam</h3>\r\n	</li>\r\n	<li>\r\n	<h3>- Số điện thoại :<strong>&nbsp;0868686868</strong></h3>\r\n	</li>\r\n	<li>\r\n	<h3>- Zalo :&nbsp;<strong>0868686868</strong></h3>\r\n	</li>\r\n	<li>\r\n	<h3>- Fb : Ho&agrave;ng T&ugrave;ng</h3>\r\n	</li>\r\n	<li>\r\n	<h3>- GitHub :&nbsp;https://github.com/hoangtung2103/</h3>\r\n	</li>\r\n</ol>\r\n\r\n<h3><strong>&nbsp; &nbsp;</strong></h3>\r\n\r\n<h3>&nbsp;</h3>\r\n\r\n<h3>&nbsp;</h3>\r\n');
 
 -- --------------------------------------------------------
 
@@ -363,7 +390,7 @@ ALTER TABLE `tbl_admin`
 -- AUTO_INCREMENT cho bảng `tbl_baiviet`
 --
 ALTER TABLE `tbl_baiviet`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT cho bảng `tbl_band`
@@ -375,13 +402,13 @@ ALTER TABLE `tbl_band`
 -- AUTO_INCREMENT cho bảng `tbl_cart`
 --
 ALTER TABLE `tbl_cart`
-  MODIFY `id_cart` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
+  MODIFY `id_cart` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=47;
 
 --
 -- AUTO_INCREMENT cho bảng `tbl_cart_details`
 --
 ALTER TABLE `tbl_cart_details`
-  MODIFY `id_cart_details` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=52;
+  MODIFY `id_cart_details` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=56;
 
 --
 -- AUTO_INCREMENT cho bảng `tbl_dangky`
@@ -399,7 +426,7 @@ ALTER TABLE `tbl_danhmuc`
 -- AUTO_INCREMENT cho bảng `tbl_danhmucbaiviet`
 --
 ALTER TABLE `tbl_danhmucbaiviet`
-  MODIFY `id_baiviet` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id_baiviet` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT cho bảng `tbl_lienhe`
