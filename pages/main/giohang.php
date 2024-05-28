@@ -85,12 +85,27 @@
         </div>
     </div>
     <?php
-      }
+       }
+       // Calculate discount based on total amount
+       $discount = 0;
+       if ($tongtien > 100000000) {
+         $discount = 20;
+       } elseif ($tongtien > 50000000) {
+         $discount = 10;
+       } elseif ($tongtien > 10000000) {
+         $discount = 5;
+       }
+       $discountAmount = ($tongtien * $discount) / 100;
+       $finalAmount = $tongtien - $discountAmount;
       ?>
   <tr>
     <td colspan="8" style="border-top: 1px solid #ccc; padding-top:20px">
-      <p style="float: right;" class="sum-mn">Tổng tiền:
+        <p style="float: right;" class="sum-mn">Tổng tiền:
         <span><?php echo number_format($tongtien, 0, ',', '.') . 'vnđ' ?></span> </p><br />
+        <p style="float: right;" class="sum-mn1">Chiết khấu:
+        <span><?php echo number_format($discountAmount, 0, ',', '.') . 'vnđ  ' ?>(<?php echo $discount; ?>%)</span></span> </p><br />
+        <p style="float: right;" class="sum-mn2">Thành tiền:
+        <span><?php echo number_format($finalAmount, 0, ',', '.') . 'vnđ' ?></span> </p><br />
       <div class="clear"></div>
       <p style="float: right;" class="delete delete-all"><a href="pages/main/themgiohang.php?xoatatca=1">Xoá tất cả</a>
       </p>
@@ -108,9 +123,6 @@
         <?php
       }
       ?>
-
-
-
 
     </td>
 
@@ -131,6 +143,49 @@
 
 </table>
 
-
-
 </div>
+
+
+<style>
+
+  
+.sum-mn {
+    position: absolute; /* Sử dụng absolute position */
+    right: 200px; /* Đặt vị trí từ phía bên phải */
+    margin-right: 120px; /* Khoảng cách từ vị trí cuối cùng của container */
+    text-align: right;
+}
+
+.sum-mn span {
+    font-size: 20px;
+    color: red;
+}
+
+.sum-mn1 {
+  position: absolute;
+    right: 200px;
+    margin-right: 120px;
+    margin-top: 10px;
+    text-align: right;
+}
+
+.sum-mn1 span {
+    font-size: 20px;
+    color: red;
+}
+
+.sum-mn2 {
+  position: absolute;
+    right: 200px;
+    margin-right: 120px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: right;
+}
+
+.sum-mn2 span {
+    font-size: 20px;
+    color: red;
+}
+
+</style>
